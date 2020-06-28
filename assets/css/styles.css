@@ -1,0 +1,20 @@
+body {
+  padding-top: 60px;
+}
+
+.text-danger {
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#thecenteredone {
+  align-content: center;
+}
+

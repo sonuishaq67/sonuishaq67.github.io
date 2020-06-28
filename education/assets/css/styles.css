@@ -1,0 +1,26 @@
+#first-heading {
+  padding-top: 100px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.onetwofour {
+  font-size: 40px;
+  padding-top: 50px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.onetwothree {
+  font-size: 24px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.onetwofive {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+

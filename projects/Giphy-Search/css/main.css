@@ -1,0 +1,42 @@
+body {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+	background-color: black;
+	background-image: url("../milk.jpg");
+	background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+	color:white;
+}
+
+.container-padding50 {
+	padding-top: 50px;
+}
+
+.container-textinput {
+	width: 80%;
+	display: inline-block;
+	padding: 20px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+}
+
+.container-button {
+	width: 10%;
+	display: inline-block;
+	padding: 20px;
+	background-color: red;
+	color: white;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.container-image {
+	width: 30%;
+	display: block;
+	float: left;
+	margin-right:3%;
+}

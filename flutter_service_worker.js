@@ -8,14 +8,14 @@ const RESOURCES = {
 "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"index.html": "eeeb4762c559e95904e2394b6e7ab87c",
-"/": "eeeb4762c559e95904e2394b6e7ab87c",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"index.html": "362bb644d53b62f97211e97b99ff2a0d",
+"/": "362bb644d53b62f97211e97b99ff2a0d",
+"icons/Icon-512.png": "89b4679b5b0e4ae13de9b37966f01129",
+"icons/Icon-192.png": "89b4679b5b0e4ae13de9b37966f01129",
 "version.json": "26135e4be13343012ada35bf6692fcf3",
-"main.dart.js": "57375b5391ee83f0d95434817be35e93",
+"main.dart.js": "8bf95d0401aebd40684ec4257d0a140e",
 "manifest.json": "e43df159855747dcb30e2589d23935ed",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796"
+"favicon.png": "89b4679b5b0e4ae13de9b37966f01129"
 };
 
 // The application shell files that are downloaded before a service worker can

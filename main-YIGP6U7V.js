@@ -9,8 +9,9 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
   html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {
     width: 100%;
     height: 100%;
-    overflow-x: hidden; 
+    overflow: hidden; 
 
+    margin: 0;
   }
 
   body[_ngcontent-%COMP%] {
@@ -18,13 +19,15 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
     justify-content: flex-start; 
 
     align-items: center;
-    min-height: 100vh;
+    min-height: 95vh;
     padding: 0;
   }
 
   main[_ngcontent-%COMP%] {
     width: 100%;
     padding: 2rem;
+    height: 95vh;
+    overflow: hidden;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start; 
@@ -32,6 +35,17 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
     align-items: center;
     text-align: left;
     font-family: "Poppins", sans-serif;
+  }
+  main[_ngcontent-%COMP%]::-webkit-scrollbar {
+    display: none; 
+
+  }
+
+  
+
+  main[_ngcontent-%COMP%] {
+    scrollbar-width: none; 
+
   }
 
   

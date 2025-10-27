@@ -1,27 +1,413 @@
-<!doctype html>
-<html lang="en" data-critters-container>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ishaq.us</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>html{background-color:#000;color:#fff}</style><link rel="stylesheet" href="styles-7LSZVJTB.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-7LSZVJTB.css"></noscript></head>
-
-<!-- Google tag (gtag.js) -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DZ9C6SY00"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1DZ9C6SY00');
-</script>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#000000" />
+  <title>Ishaq Shaik — MS CS @ ASU</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
 <body>
-  <app-root></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-3JSWETOI.js" type="module"></script></body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">ishaq.us</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="resume.pdf" class="nav-cta" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="gradient-text">Ishaq Shaik</span><br />
+          MS CS @ ASU • Systems + Data
+        </h1>
+        <p class="hero-description">
+          Build data platforms, retrieval systems, and cloud backends. Hybrid search, vectors + SQL + graphs. Pragmatic, low-latency, production-minded.
+        </p>
+        <div class="hero-links">
+          <a href="#projects" class="btn-primary">Featured Work</a>
+          <a href="#contact" class="btn-secondary">Contact</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-block">
+          <div class="code-header">
+            <span class="code-dot"></span><span class="code-dot"></span><span class="code-dot"></span>
+          </div>
+          <div class="code-content">
+<pre><code>{
+  "name": "Ishaq Shaik",
+  "program": "M.S. Computer Science, ASU",
+  "grad": "May 2026",
+  "gpa": 3.72,
+  "focus": ["RAG", "Data Systems", "Cloud"],
+  "stack": ["Python", "C++", "PostgreSQL", "pgvector",
+            "Neo4j", "FastAPI", "AWS"],
+  "work_auth": "U.S. work authorized (F-1 OPT/STEM)"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="large-text">
+            Graduate software engineer focused on retrieval-augmented generation, analytics backends, and cloud data engineering. I design hybrid search that fuses vectors, SQL filters, and graph signals.
+          </p>
+          <p>
+            Current work spans high-volume ETL, rankers/routers for RAG, and analytics for learner data. I optimize query plans, memory patterns, and deployment pipelines to hit latency and cost targets.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">571M</div>
+              <div class="stat-label">reviews processed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">48M</div>
+              <div class="stat-label">products indexed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3</div>
+              <div class="stat-label">stores: SQL • Vector • Graph</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-title">Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-title">Data & IR</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">pgvector + HNSW</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Neo4j</span>
+              <span class="skill-tag">Elastic</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-title">Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-title">Infra</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Terraform</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Experience -->
+<section id="experience" class="section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+  
+      <div class="timeline">
+  
+        <!-- ASU – Thunderbird School of Global Management -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">May 2025 — Present</span>
+            <h3 class="timeline-title">Graduate Student Assistant (Software Engineer)</h3>
+            <h4 class="timeline-company">ASU – Thunderbird School of Global Management • Phoenix, AZ</h4>
+            <ul class="timeline-skills">
+              <li>Enabled 5K+ Spanish users to query DreamBuilder by building RAG-powered WhatsApp bot using Meta API.</li>
+              <li>Ensured reliable message delivery by implementing webhooks and session logic with secure state management.</li>
+              <li>Increased reporting frequency from monthly to daily for 250K+ users by deploying AWS Lambda+RDS ingestion service.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Extreme Networks -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jul 2023 — Aug 2024</span>
+            <h3 class="timeline-title">Software Engineer, Wireless Systems</h3>
+            <h4 class="timeline-company">Extreme Networks • Bangalore, India</h4>
+            <ul class="timeline-skills">
+              <li>Released 2 flagship AP models on time, adopted across 20 NFL/MLB sites, by developing 8 APIs with 70+ edge cases.</li>
+              <li>Reduced missing updates when APs were offline for 100K+ devices by engineering fault-tolerant Kafka pipeline.</li>
+              <li>Cut latency in AP request handling by 25% by implementing gRPC layer to boost API throughput across services.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Nbyula -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Mar 2023 — May 2023</span>
+            <h3 class="timeline-title">Software Engineer Intern</h3>
+            <h4 class="timeline-company">Nbyula • Bangalore, India</h4>
+            <ul class="timeline-skills">
+              <li>Improved engagement and retention by cutting image load time 84% (2.5s→400ms) using AWS S3 + CloudFront.</li>
+              <li>Boosted Daily Active Users from 3.2K→4.2K (+32%) by redesigning React chat UI and fixing Redis duplication bug.</li>
+              <li>Enabled faster releases and reliable deploys by dockerizing microservices and automating CI/CD with AWS.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- LoadShare Networks -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sep 2022 — Dec 2022</span>
+            <h3 class="timeline-title">Software Developer Intern</h3>
+            <h4 class="timeline-company">LoadShare Networks • Bangalore, India</h4>
+            <ul class="timeline-skills">
+              <li>Saved ops team 10–15 min daily by automating 2–3 SQL updates via Spring Boot + Slack bot for real-time changes.</li>
+              <li>Cut rollout time 75% (40→10 min) and improved safety by dockerizing Spring Boot service with automated CI/CD.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Chiplogic Technologies -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2022 — Aug 2022</span>
+            <h3 class="timeline-title">Software Developer Intern</h3>
+            <h4 class="timeline-company">Chiplogic Technologies • Bangalore, India</h4>
+            <ul class="timeline-skills">
+              <li>Cut firmware memory use 72% on 5G O-RAN targets by optimizing embedded C++ and data structures.</li>
+              <li>Raised cross-interface throughput 15% by implementing C++ APIs for O-RAN components.</li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Education -->
+  <section id="education" class="section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — 2026</span>
+            <h3 class="timeline-title">M.S., Computer Science</h3>
+            <h4 class="timeline-company">Arizona State University</h4>
+            <p class="timeline-description">
+              GPA 3.72/4.00. Focus: Cloud Computing, Data Processing at Scale, Statistical ML.
+            </p>
+            <ul class="timeline-skills">
+              <li>RAG systems and hybrid search</li>
+              <li>Distributed data pipelines on AWS</li>
+              <li>Database and query optimization</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 — 2023</span>
+            <h3 class="timeline-title">B.E., Information Science</h3>
+            <h4 class="timeline-company">Ramaiah Institute of Technology</h4>
+            <p class="timeline-description">
+              Projects in systems, algorithms, and backend engineering.
+            </p>
+            <ul class="timeline-skills">
+              <li>Data structures and algorithms</li>
+              <li>Backend services</li>
+              <li>Database systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Amazon Reviews RAG System</h3>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Live">↗</a>
+              <a href="#" class="project-link" aria-label="Code">⟲</a>
+            </div>
+          </div>
+          <p class="project-description">
+            Hybrid retrieval on 571M reviews and 48M items. Router-ranker combines pgvector embeddings, SQL filters, and Neo4j “bought-together” edges. Low-latency top-K with HNSW and product graph boosts.
+          </p>
+          <div class="project-tech">
+            <span>PostgreSQL</span><span>pgvector</span><span>Neo4j</span><span>FastAPI</span><span>AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">DreamBuilderDB Analytics</h3>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Live">↗</a>
+              <a href="#" class="project-link" aria-label="Code">⟲</a>
+            </div>
+          </div>
+          <p class="project-description">
+            Warehouse and dashboards for learner outcomes. ETL for surveys and activity logs. QuickSight visuals: grads per year/country, cohort funnels, and completion SLAs.
+          </p>
+          <div class="project-tech">
+            <span>AWS RDS</span><span>PostgreSQL</span><span>Python</span><span>QuickSight</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">WhatsApp LLM Assistant</h3>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Live">↗</a>
+              <a href="#" class="project-link" aria-label="Code">⟲</a>
+            </div>
+          </div>
+          <p class="project-description">
+            Session-aware bot with hashed IDs, minimal context window, and tool routing. Deployed on AWS with autoscaling and structured logs.
+          </p>
+          <div class="project-tech">
+            <span>Node.js</span><span>Python</span><span>AWS</span><span>DynamoDB/Redis</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Survey ETL + Validation</h3>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Live">↗</a>
+              <a href="#" class="project-link" aria-label="Code">⟲</a>
+            </div>
+          </div>
+          <p class="project-description">
+            Schema-first pipeline for JSON survey payloads. Idempotent loaders, audit columns, and late-arriving data handling with upserts and checksum guards.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>SQL</span><span>Airflow</span><span>Terraform</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-intro">
+          Open to internships and new-grad software roles. Data platforms, retrieval, backend systems.
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:ishaq.sde@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">ishaq.sde@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ishaq-sde" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/ishaq-sde</div>
+            </div>
+          </a>
+          <a href="https://github.com/sonuishaq67" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">🔧</span>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/sonuishaq67</div>
+            </div>
+          </a>
+          <a href="resume.pdf" class="contact-item" target="_blank" rel="noopener">
+            <span class="contact-icon">📄</span>
+            <div>
+              <div class="contact-label">Resume</div>
+              <div class="contact-value">Download PDF</div>
+            </div>
+          </a>
+        </div>
+        <p style="margin-top:1rem;font-size:0.95rem;opacity:.9">
+          Work authorization: U.S. work authorized (F-1 OPT/STEM eligible).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Ishaq Shaik.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

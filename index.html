@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ishaq ahmed shaik</title>
-  <meta name="description" content="Ishaq Ahmed Shaik — software engineer, MS CS at ASU. Currently recruiting for summer 2026." />
+  <meta name="description" content="Ishaq Ahmed Shaik — software engineer, MS CS from ASU. Open to full-time ML and software engineering roles." />
   <link rel="canonical" href="https://ishaq.us/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,15 +24,15 @@
     <section>
       <p class="prompt">$ whoami</p>
       <p class="line">ishaq ahmed shaik</p>
-      <p class="line">mle / swe &middot; tempe, az</p>
-      <p class="line">ms cs @ asu, graduating may 2026</p>
+      <p class="line">mle / swe &middot; san francisco, ca</p>
+      <p class="line">ms cs @ asu, graduated may 2026 &middot; gpa 3.8</p>
     </section>
 
     <hr />
 
     <section>
       <p class="prompt">$ looking_for</p>
-      <p class="line">full-time roles, start jun 2026</p>
+      <p class="line">full-time roles</p>
       <p class="line"><span class="label">primary</span> mle / ml infra / ai research eng</p>
       <p class="line"><span class="label">also open</span> backend / infra / distributed systems swe</p>
       <p class="line">us (remote or on-site) &middot; us work authorized</p>
@@ -45,7 +45,7 @@
       <p class="line"><span class="label">resume</span> <a href="assets/resume-ml.pdf" target="_blank" rel="noopener">[ml.pdf]</a> <a href="assets/resume-backend.pdf" target="_blank" rel="noopener">[backend.pdf]</a></p>
       <p class="line"><span class="label">email</span> <a href="mailto:ishaq.sde@gmail.com">ishaq.sde@gmail.com</a></p>
       <p class="line"><span class="label">github</span> <a href="https://github.com/sonuishaq67" target="_blank" rel="noopener">sonuishaq67</a></p>
-      <p class="line"><span class="label">linkedin</span> <a href="https://linkedin.com/in/ishaq-sde" target="_blank" rel="noopener">ishaq-sde</a></p>
+      <p class="line"><span class="label">linkedin</span> <a href="https://linkedin.com/in/si67" target="_blank" rel="noopener">si67</a></p>
     </section>
 
     <hr />
@@ -53,7 +53,7 @@
     <section>
       <p class="prompt">$ cat recent.md</p>
       <p class="entry-head">[2026-04] won villagehacks 2026 @ asu</p>
-      <p class="indent">with benjamin aspinall. built <strong>agent debate</strong>: an ai research orchestrator that generates opposing reports on a question and runs a podcast-style debate via elevenlabs, using the think&#8319; beliefs api to map claim confidence onto voice.</p>
+      <p class="indent">with benjamin aspinall. built <strong>agent debate</strong>: a multi-agent research orchestrator chaining 5 agents (plan, retrieve, summarize, critic, write) into grounded opposing reports, then a podcast-style debate via elevenlabs tts, tracking per-turn claim confidence with the beliefs sdk.</p>
       <p class="indent">&rarr; <a href="https://github.com/benaspinall1/agent-debate" target="_blank" rel="noopener">github.com/benaspinall1/agent-debate</a></p>
     </section>
 
@@ -62,17 +62,17 @@
     <section>
       <p class="prompt">$ experience</p>
 
-      <p class="entry-head">[2025--] asu, graduate student assistant</p>
-      <p class="indent">deployed a python rag whatsapp assistant to 5k+ users on aws lambda + sqs; cut query error rate 30% &rarr; 1%.</p>
+      <p class="entry-head">[25-26] asu, graduate student assistant</p>
+      <p class="indent">deployed a rag chatbot to 5k+ users at 1.2s latency on aws lambda; cut multi-turn compute costs 40% with context summarization. scaled a lambda + rds ml pipeline to 300k+ events at 99.9% uptime.</p>
 
       <p class="entry-head space-top">[23-24] extreme networks, software engineer</p>
-      <p class="indent">java + kafka + grpc on flagship networking hardware. 99.99% state recovery across 100k+ devices, 25% inter-service latency drop.</p>
+      <p class="indent">migrated java rest apis to grpc + protobuf: 25% inter-service latency drop across 1m+ daily requests. shipped 8 spring boot data apis across 20+ nfl/mlb stadium sites for flagship hardware.</p>
 
       <p class="entry-head space-top">[2023] nbyula, swe intern</p>
-      <p class="indent">python services + docker on aws cloudfront + redis. cut image load 84% (2.5s &rarr; 400ms) and raised chat dau 32%.</p>
+      <p class="indent">cut image load 84% (2.5s &rarr; 400ms) with cloudfront edge caching + server-side cropping; raised chat dau 32% by fixing redis cache invalidation.</p>
 
       <p class="entry-head space-top">[2022] loadshare networks, sde intern</p>
-      <p class="indent">dockerized java spring boot microservices &mdash; 75% faster deploys.</p>
+      <p class="indent">dockerized spring boot microservices with github ci/cd &mdash; 75% faster deploys (40 &rarr; 10 min). built a slack bot that automated manual sql ops.</p>
     </section>
 
     <hr />
@@ -80,16 +80,18 @@
     <section>
       <p class="prompt">$ things_i_built_for_fun</p>
       <p class="entry-head">chess transformer on lichess</p>
-      <p class="indent">500m-param transformer trained on 10b tokens on 4xh100s. serves live games at 0.3s move latency via onnx on ec2. challenge it on lichess.</p>
+      <p class="indent">500m-param decoder-only transformer trained on 10b tokens across 8xgaudi2, fed by a duckdb pipeline over 100m+ games. serves live games at sub-second latency via onnx on ec2. challenge it on lichess.</p>
       <p class="indent">&rarr; <a href="https://github.com/sonuishaq67/chess" target="_blank" rel="noopener">github.com/sonuishaq67/chess</a></p>
 
       <p class="entry-head space-top">pong, but the agent learns it</p>
-      <p class="indent">double-dqn reinforcement learner that hits 100% win rate on 10k games. 91% training speedup from parallel async vector envs + torch.compile.</p>
+      <p class="indent">double-dqn reinforcement learner that hits 100% win rate on 10k games. 91% training speedup from 16 parallel async vector envs + torch.compile.</p>
       <p class="indent">&rarr; <a href="https://github.com/sonuishaq67/pong" target="_blank" rel="noopener">github.com/sonuishaq67/pong</a></p>
 
-      <p class="entry-head space-top">distributed social media backend</p>
-      <p class="indent">go service mesh on kubernetes hpa, 50k+ req/min sustained under load, grpc end-to-end.</p>
-      <p class="indent">&rarr; <a href="https://github.com/sonuishaq67/social-api" target="_blank" rel="noopener">github.com/sonuishaq67/social-api</a></p>
+      <p class="entry-head space-top">amazon reviews rag</p>
+      <p class="indent">hybrid vector + knowledge-graph retrieval (pgvector + neo4j) over 571m amazon reviews. +27% precision@10, with ablations against vector-only and graph-only baselines.</p>
+
+      <p class="entry-head space-top">network intrusion detection</p>
+      <p class="indent">xgboost classifier on nsl-kdd flagging malicious connections; cut the input space 56% via correlation filtering + gain importance with no accuracy loss.</p>
     </section>
 
     <hr />
